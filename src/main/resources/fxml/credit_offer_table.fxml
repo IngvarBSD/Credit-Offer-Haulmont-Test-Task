@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" maxWidth="Infinity" prefHeight="534.0" prefWidth="739.0" HBox.hgrow="ALWAYS" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="glebi.javafx.app.CreditOfferController">
+    <children>
+        <TableView fx:id="creditOfferTable" VBox.vgrow="ALWAYS" />
+        <HBox prefHeight="22.0" spacing="30.0">
+            <children>
+            <Button alignment="BOTTOM_CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnPaymentScheduleAction" prefHeight="25.0" prefWidth="130.0" text="Смотреть график платежей" HBox.hgrow="ALWAYS" />
+                <Button alignment="BOTTOM_CENTER" layoutX="10.0" layoutY="10.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnDeleteAction" prefHeight="25.0" prefWidth="130.0" text="Удалить запись" HBox.hgrow="ALWAYS" />
+            </children>
+            <padding>
+                <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+            </padding>
+        </HBox>
+    </children>
+</VBox>

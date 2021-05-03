@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" maxWidth="Infinity" HBox.hgrow="ALWAYS" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="glebi.javafx.app.PaymentScheduleController">
+    <children>
+        <TableView fx:id="paymentScheduleTable" prefHeight="582.0" prefWidth="944.0" VBox.vgrow="ALWAYS" />
+    </children>
+</VBox>

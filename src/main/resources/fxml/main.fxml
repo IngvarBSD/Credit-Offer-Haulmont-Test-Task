@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="center" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="glebi.javafx.app.MainController">
+  <children>
+      <!-- MenuBar - строка меню сверху -->
+      <MenuBar VBox.vgrow="NEVER">
+          <menus>
+              <Menu mnemonicParsing="false" text="Файл">
+                  <items>
+                      <MenuItem mnemonicParsing="false" text="Закрыть программу" onAction="#btnExitAction" />
+                  </items>
+              </Menu>
+              <Menu mnemonicParsing="false" text="Помощь">
+                  <items>
+                      <MenuItem mnemonicParsing="false" text="О программе" onAction="#btnAboutProgram" />
+                  </items>
+              </Menu>
+          </menus>
+      </MenuBar>
+      <!-- HBox ниже хранит кнопки для переключения таблиц -->
+      <HBox prefHeight="22.0" prefWidth="800.0" spacing="30.0" VBox.vgrow="NEVER">
+         <children>
+            <Button onAction="#btnClientsAction" alignment="BOTTOM_CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Клиенты" HBox.hgrow="ALWAYS" />
+            <Button onAction="#btnCreditsAction" alignment="BOTTOM_CENTER" layoutX="10.0" layoutY="10.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Кредиты" HBox.hgrow="ALWAYS" />
+            <Button onAction="#btnOffersAction" alignment="BOTTOM_CENTER" layoutX="140.0" layoutY="10.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Кредитные предложения" HBox.hgrow="ALWAYS" />
+         </children>
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </HBox>
+      <!-- HBox ниже является контейнером для лэйаута других fxml файлов, которые будут загружатся сюда по надобности -->
+      <HBox prefHeight="400.0" VBox.vgrow="ALWAYS" fx:id="contentHBox" />
+  </children>
+
+    <!-- Оставил шаблон для контент-бокса как свойства на всякий случай -->
+<!--    <properties>-->
+<!--        <contentHBox>-->
+<!--            <fx:reference source="contentHBox"/>-->
+<!--        </contentHBox>-->
+<!--    </properties>-->
+</VBox>
